@@ -58,9 +58,9 @@ namespace DemoCrudUsingEF.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(product);
+                _context.Add(product);  
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index)); 
             }
             return View(product);
         }

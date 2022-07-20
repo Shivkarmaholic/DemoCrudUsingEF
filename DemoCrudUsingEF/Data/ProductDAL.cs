@@ -47,7 +47,7 @@ namespace DemoCrudUsingEF.Data
             return result;
 
         }
-        public int DeleteProduct(int id)
+        public int DeleteProduct(int id) 
         {
             int result = 0;
             Product prod = db.products.Where(x => x.ID == id).FirstOrDefault();
